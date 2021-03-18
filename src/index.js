@@ -1,5 +1,6 @@
 import "./styles.css";
 import {
+  DiceAction,
   DiceD10,
   DiceD100,
   DiceD12,
@@ -8,6 +9,7 @@ import {
   DiceD4,
   DiceD6,
   DiceD8,
+  DiceDirection,
 } from "./dice";
 import * as THREE from "three";
 import { Board } from "./board";
@@ -30,6 +32,8 @@ container.addEventListener(
       new DiceD12({}, board),
       new DiceD20({}, board),
       new DiceD100({}, board),
+      new DiceDirection({}, board),
+      new DiceAction({}, board),
     ];
 
     board.throwDice((values) => console.log(values));

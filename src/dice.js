@@ -790,3 +790,29 @@ export class DiceD100 extends DiceD10 {
     ];
   }
 }
+
+export class DiceDirection extends DiceD6 {
+  getFaces() {
+    return [
+      { value: "hit", text: "\u2316" },
+      { value: "hit", text: "\u2316" },
+      { value: "arrow", text: "\u21e6", angle: Math.PI / 4 },
+      { value: "arrow", text: "\u21e6", angle: Math.PI / 4 },
+      { value: "arrow", text: "\u21e6", angle: Math.PI / 4 },
+      { value: "arrow", text: "\u21e6", angle: Math.PI / 4 },
+    ];
+  }
+}
+
+export class DiceAction extends DiceD6 {
+  getFaces() {
+    return [
+      { value: "miss", text: "Miss" },
+      { value: "miss", text: "Miss" },
+      { value: "hit", text: "Hit" },
+      { value: "hit", text: "Hit" },
+      { value: "hit", text: "Hit" },
+      { value: "hit", text: "Hit" },
+    ];
+  }
+}
