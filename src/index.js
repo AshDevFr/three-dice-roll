@@ -37,7 +37,7 @@ container.addEventListener(
     ];
 
     board.throwDice((values) => console.log(values));
-    // board.showDice();
+    board.showDice();
     // dice[1].setAnimation(0)
   },
   false
